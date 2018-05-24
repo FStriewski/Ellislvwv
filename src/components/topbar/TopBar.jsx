@@ -9,7 +9,10 @@ import { filterByDate, fetchAllEvents} from '../../actions/events'
 class TopBar extends React.Component {
 
     dispatchFilterDate = (filter) => {
+
         this.props.fetchAllEvents()
+
+
         // This code is faster then the fetch all
         const start = (filter.startDate === "") ? new Date("1000-01-01") : new Date(filter.startDate) 
         const end = (filter.endDate === "") ? new Date("3000-01-01") : new Date(filter.endDate) 
@@ -27,9 +30,11 @@ class TopBar extends React.Component {
 
         return (
             <div className="topBarContainer">
-                <span>Logo</span>
+                <div className="logo">
+                    <img src="/logo.svg" alt="logo" height="50px" width="50px" />
+                </div>
                 <span>Title</span>
-              
+
                 <div className="topBarControls">
                     <DateFilter onSubmit={this.dispatchFilterDate} />
                 </div>

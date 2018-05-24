@@ -1,8 +1,9 @@
 .topBarContainer{
     min-width: 100%;
-    height: 75px;
+    height: 50px;
     border: 1px dotted black;
-
+    display: flex;
+    padding: 2%;
 }
 
 .topBarControls{   
