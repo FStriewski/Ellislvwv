@@ -31,12 +31,6 @@ class DateFilter extends React.Component {
         )
     }
 
-    handleClck = () => {
-        this.props.onClick()
-        console.log("test2")
-    }
-
-
 
     render() {
         return (
@@ -45,7 +39,6 @@ class DateFilter extends React.Component {
                 <input className="StartDatePicker" name="startDate" onChange={this.handleChange} type="date" />
                 <input className="EndDatePicker" name="endDate" onChange={this.handleChange} type="date" />
                 <button >O</button>
-                <button onClick={this.handleClick}>...</button>
             </form>
         </div>
         )
