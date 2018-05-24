@@ -1,0 +1,12 @@
+.topBarContainer{
+    min-width: 100%;
+    height: 75px;
+    border: 1px dotted black;
+
+}
+
+.topBarControls{
+    
+    display: flex;
+    justify-content: flex-end;
+}
