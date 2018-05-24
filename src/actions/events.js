@@ -19,5 +19,5 @@ export const fetchAllEvents = () => (dispatch) => {
 
 export const filterByDate = (result) => ({
     type: FILTER_BY_DATE,
-    payload: result,
+     payload: result
 })
