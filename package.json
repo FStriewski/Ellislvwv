@@ -10,7 +10,8 @@
     "redux": "^3.7.2",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "superagent": "^3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
