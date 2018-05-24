@@ -1,10 +1,14 @@
 
-import {FETCH_ALL_EVENTS} from '../actions/events'
+import { FETCH_ALL_EVENTS, FILTER_BY_DATE } from '../actions/events'
 
 export default function (state = [], action) {
 
-    if (action.type === FETCH_ALL_EVENTS){
-        return action.payload
+    switch (action.type) {
+        case FETCH_ALL_EVENTS:
+            return action.payload
+
+        case FILTER_BY_DATE:
+            return action.payload
     }
 
     return state

@@ -4,6 +4,7 @@ const baseUrl = 'https://voorhoede-colibri-api-zhmoaomjvy.now.sh/api/v1'
 
 
 export const FETCH_ALL_EVENTS = "FETCH_ALL_EVENTS"
+export const FILTER_BY_DATE = "FILTER_BY_DATE"
 
 
 export const fetchAllEvents = () => (dispatch) => {
@@ -15,3 +16,8 @@ export const fetchAllEvents = () => (dispatch) => {
         }))
         .catch(error => console.error(error))
 }
+
+export const filterByDate = (result) => ({
+    type: FILTER_BY_DATE,
+    payload: result,
+})

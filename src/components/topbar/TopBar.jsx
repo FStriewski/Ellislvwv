@@ -3,11 +3,16 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import DateFilter from './DateFilter'
 import '../../style/topBarUnit.css'
+import {filterByDate} from '../../actions/events'
 
 
 class TopBar extends React.Component {
 
+    filterDate = (filter) => {
 
+      //  this.props.filterByDate(filter)
+        console.log(filter)
+    }
 
     render() {
 
@@ -17,8 +22,7 @@ class TopBar extends React.Component {
                 <span>Title</span>
               
                 <div className="topBarControls">
-                    <DateFilter />
-                    <button className="dateFilterApply" onClick={ _ => console.log("Apply")}> o </button>
+                    <DateFilter onSubmit={this.filterDate} />
                     <button className="dateFilterRelease" onClick={ _ => console.log("Release")}> X </button>
                 </div>
             </div>
@@ -29,4 +33,4 @@ class TopBar extends React.Component {
 
 
 
-export default connect(null, null)(TopBar)
+export default connect(null, filterByDate)(TopBar)
