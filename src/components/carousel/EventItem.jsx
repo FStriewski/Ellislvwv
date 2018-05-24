@@ -10,14 +10,22 @@ class EventItem extends React.Component {
 
 
     render(){
+        const day = this.props.date.slice(0, 10)
+        const time = this.props.date.slice(11, 16)
+        const x = new Date().toJSON().slice(11, 16)
+
+
         return (
             <div className="eventItem">
-                <span> {this.props.date}</span>
-                <h5>{this.props.title}</h5>
-
-                <p>{this.props.description}</p>
-                <a href={this.props.url} target="_blank">More...</a>
-
+                <div className="eventHeading">
+                    <span className="eventDay"> {day}</span><br />
+                    <span className="eventTime"> {time}</span>
+                </div>
+                <div className="eventBody">
+                    <h5 className="eventTitle">{this.props.title}</h5>
+                    <p className="eventDescription">{this.props.description}</p>
+                    <a className="eventButton" href={this.props.url} target="_blank">More...</a>
+                </div>
             </div>
         )
     }

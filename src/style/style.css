@@ -1,12 +1,5 @@
 
-.eventItem{
-    min-width: 250px;
-    height: 300px;
-    margin: 2%;
-    border: 1px solid black;
-    text-align: center;
-    padding: 2%;
-} 
+
 
 .carouselContainer {
     margin: 5%;
@@ -18,4 +11,41 @@
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+}
+
+.eventItem {
+    min-width: 250px;
+    height: 300px;
+    margin: 2%;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.eventHeading {
+    text-align: right;
+}
+
+.eventDay {
+
+}
+
+.eventTime {
+
+    font-weight: bold;
+}
+
+.eventBody {
+    text-align: center;
+}
+
+.eventTitle {
+
+}
+
+.eventDescription {
+
+}
+
+.eventButton {
+
 }
