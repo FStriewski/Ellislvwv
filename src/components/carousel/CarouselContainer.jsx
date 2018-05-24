@@ -23,11 +23,15 @@ class CarouselContainer extends React.Component {
         const {events} = this.props
 
         if(!events){
-            console.log("Error: No api response. Failed to render.")
+            console.log("Error: No API response. Failed to render.")
         }
+
+        // Cast date strings to proper dates for sorting:
+        const sortedEvents = events.sort((a, b) => new Date(b.date.slice(0, 10)) - new Date(a.date.slice(0, 10)))
+
         return (
             <section className="carouselContainer">{
-                events.map(e => 
+                sortedEvents.map(e => 
                 <EventItem 
                     key={e.date} 
                     title={e.title} 

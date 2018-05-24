@@ -12,8 +12,6 @@ class EventItem extends React.Component {
     render(){
         const day = this.props.date.slice(0, 10)
         const time = this.props.date.slice(11, 16)
-        const x = new Date().toJSON().slice(11, 16)
-
 
         return (
             <div className="eventItem">
