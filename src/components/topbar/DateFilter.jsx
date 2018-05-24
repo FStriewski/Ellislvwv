@@ -22,18 +22,32 @@ class DateFilter extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.onSubmit(this.state)
+
+        this.setState(
+            { 
+                startDate: "",
+                endDate: "",
+            }
+        )
     }
 
+    handleClck = () => {
+        this.props.onClick()
+        console.log("test2")
+    }
 
 
 
     render() {
         return (
+            <div>
             <form className="dateFilterContainer" onSubmit={this.handleSubmit}>
                 <input className="StartDatePicker" name="startDate" onChange={this.handleChange} type="date" />
                 <input className="EndDatePicker" name="endDate" onChange={this.handleChange} type="date" />
                 <button >O</button>
+                <button onClick={this.handleClick}>...</button>
             </form>
+        </div>
         )
     }
 

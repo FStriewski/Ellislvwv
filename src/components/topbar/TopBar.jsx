@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import DateFilter from './DateFilter'
 import '../../style/topBarUnit.css'
-import {filterByDate} from '../../actions/events'
+import { filterByDate, fetchAllEvents} from '../../actions/events'
 
 
 class TopBar extends React.Component {
 
     dispatchFilterDate = (filter) => {
+        this.props.fetchAllEvents()
         const start = (filter.startDate === "") ? new Date("1000-01-01") : new Date(filter.startDate) 
         const end = (filter.endDate === "") ? new Date("3000-01-01") : new Date(filter.endDate) 
 
@@ -20,6 +21,10 @@ class TopBar extends React.Component {
         this.props.filterByDate(result)
     }
 
+    dispatchTest = () => {
+        console.log("test")
+    }
+
     render() {
 
         return (
@@ -28,8 +33,9 @@ class TopBar extends React.Component {
                 <span>Title</span>
               
                 <div className="topBarControls">
-                    <DateFilter onSubmit={this.dispatchFilterDate} />
-                    <button className="dateFilterRelease" onClick={ _ => console.log("Release")}> X </button>
+                    <DateFilter onSubmit={this.dispatchFilterDate} 
+                    onClick={this.dispatchTest}/>
+                    {/* <button className="dateFilterRelease" onClick={ _ => console.log("Release")}> X </button> */}
                 </div>
             </div>
         )
@@ -45,4 +51,4 @@ const mapStateToProps = (state) => (
     }
 )
 
-export default connect(mapStateToProps, {filterByDate})(TopBar)
+export default connect(mapStateToProps, { filterByDate, fetchAllEvents})(TopBar)
