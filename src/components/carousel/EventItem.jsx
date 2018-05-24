@@ -16,8 +16,7 @@ class EventItem extends React.Component {
                 <h5>{this.props.title}</h5>
 
                 <p>{this.props.description}</p>
-                <a href={this.props.url}>More...</a>
-
+                <a href={this.props.url} target="_blank">More...</a>
 
             </div>
         )

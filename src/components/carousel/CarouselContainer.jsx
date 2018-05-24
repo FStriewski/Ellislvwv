@@ -6,6 +6,14 @@ import { fetchAllEvents } from '../../actions/events'
 import '../../style/style.css'
 
 class CarouselContainer extends React.Component {
+    static propTypes = {
+        events: PropTypes.arrayOf(PropTypes.shape({
+            date: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            url: PropTypes.string.isRequired
+        })).isRequired
+    }
 
     componentWillMount = () => {
         this.props.fetchAllEvents()
