@@ -7,10 +7,7 @@ import '../../style/topBarUnit.css'
 
 class TopBar extends React.Component {
 
-state = {
-    startDate: "",
-    endDate: "",
-}
+
 
     render() {
 
