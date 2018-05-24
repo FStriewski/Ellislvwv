@@ -7,10 +7,12 @@ import '../../style/topBarUnit.css'
 
 class TopBar extends React.Component {
 
-
+state = {
+    startDate: "",
+    endDate: "",
+}
 
     render() {
-
 
         return (
             <div className="topBarContainer">
@@ -19,7 +21,8 @@ class TopBar extends React.Component {
               
                 <div className="topBarControls">
                     <DateFilter />
-                    <button className="dateFilterRelease"> X </button>
+                    <button className="dateFilterApply" onClick={ _ => console.log("Apply")}> o </button>
+                    <button className="dateFilterRelease" onClick={ _ => console.log("Release")}> X </button>
                 </div>
             </div>
         )
