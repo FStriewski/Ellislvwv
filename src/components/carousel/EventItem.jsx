@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import {fetchAllEvents} from '../../actions/events'
 
 
-export default class EventItem extends React.Component {
+class EventItem extends React.Component {
+
+componentWillMount = () => {
+    this.props.fetchAllEvents()
+}
 
     render(){
         return (
@@ -13,4 +18,4 @@ export default class EventItem extends React.Component {
 
 }
 
-// export default EventItem
+export default connect(null, { fetchAllEvents })(EventItem)
