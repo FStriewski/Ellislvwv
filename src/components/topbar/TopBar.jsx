@@ -9,9 +9,12 @@ import {filterByDate} from '../../actions/events'
 class TopBar extends React.Component {
 
     filterDate = (filter) => {
+        const start = (filter.startDate === "") ? new Date("1000-01-01") : new Date(filter.startDate) 
+        const end = (filter.endDate === "") ? new Date("3000-01-01") : new Date(filter.endDate) 
 
-      //  this.props.filterByDate(filter)
-        console.log(filter)
+
+  
+        console.log(start)
     }
 
     render() {
@@ -33,4 +36,10 @@ class TopBar extends React.Component {
 
 
 
-export default connect(null, filterByDate)(TopBar)
+const mapStateToProps = (state) => (
+    {
+        events: state.events
+    }
+)
+
+export default connect(mapStateToProps, filterByDate)(TopBar)
