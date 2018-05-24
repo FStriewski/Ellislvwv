@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import EventItem from './EventItem'
 import { fetchAllEvents } from '../../actions/events'
-
+import '../../style/style.css'
 
 class CarouselContainer extends React.Component {
 
@@ -11,8 +12,15 @@ class CarouselContainer extends React.Component {
     }
 
     render() {
+        const {events} = this.props
+
+        if(!events){
+            console.log("Error: No api response. Failed to render.")
+        }
         return (
-            <div>empty</div>
+            <section className="carouselContainer">{
+                events.map(e => <EventItem key={e.date}/>)
+            }</section>
         )
     }
 
