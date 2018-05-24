@@ -19,7 +19,14 @@ class CarouselContainer extends React.Component {
         }
         return (
             <section className="carouselContainer">{
-                events.map(e => <EventItem key={e.date}/>)
+                events.map(e => 
+                <EventItem 
+                    key={e.date} 
+                    title={e.title} 
+                    description={e.description} 
+                    date={e.date} 
+                    url={e.url} 
+                />)
             }</section>
         )
     }

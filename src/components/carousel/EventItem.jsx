@@ -11,10 +11,20 @@ class EventItem extends React.Component {
 
     render(){
         return (
-            <div className="eventItem">Event Item</div>
+            <div className="eventItem">
+                <span> {this.props.date}</span>
+                <h5>{this.props.title}</h5>
+
+                <p>{this.props.description}</p>
+                <a href={this.props.url}>More...</a>
+
+
+            </div>
         )
     }
 
 }
+
+
 
 export default connect(null, null )(EventItem)
