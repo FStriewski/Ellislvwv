@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import EventItem from './components/carousel/EventItem'
+import CarouselContainer from './components/carousel/CarouselContainer'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <EventItem/>
+        <CarouselContainer/>
       </div>
     );
   }

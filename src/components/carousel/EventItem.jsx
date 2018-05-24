@@ -6,16 +6,14 @@ import {fetchAllEvents} from '../../actions/events'
 
 class EventItem extends React.Component {
 
-componentWillMount = () => {
-    this.props.fetchAllEvents()
-}
+
 
     render(){
         return (
-            <div>empty</div>
+            <div>Event Item</div>
         )
     }
 
 }
 
-export default connect(null, { fetchAllEvents })(EventItem)
+export default connect(null, null )(EventItem)
