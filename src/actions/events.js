@@ -13,6 +13,5 @@ export const fetchAllEvents = () => (dispatch) => {
             type: FETCH_ALL_EVENTS,
             payload: response.body
         }))
-
-
+        .catch(error => console.error(error))
 }
