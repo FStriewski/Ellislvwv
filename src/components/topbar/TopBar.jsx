@@ -18,11 +18,19 @@ class TopBar extends React.Component {
 
     render() {
         return (
+         
             <div className="topBarContainer">
-                <div className="logo">
-                    <img src="/logo.svg" alt="logo" height="50px" width="50px" />
+
+
+                <div className="topBarTitleContainer">
+                    <div>
+                        <img src="/logo.svg" alt="logo" height="50px" width="50px" />
+                    </div>
+                    <div>
+                        <span className="topBarTitle">De Voorhoede</span><br />
+                        <span className="topBarSubTitle">Events</span>
+                    </div>
                 </div>
-                <span>Title</span>
 
                 <div className="topBarControls">
                     <DateFilter onSubmit={this.dispatchFilterDate} />
