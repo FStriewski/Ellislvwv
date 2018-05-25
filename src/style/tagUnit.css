@@ -6,3 +6,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.tagItem {
+    background-color: #d1d1d1;
+    margin: .2rem;
+}

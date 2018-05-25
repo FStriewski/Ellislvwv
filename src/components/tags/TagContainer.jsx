@@ -21,12 +21,19 @@ class CarouselContainer extends React.Component {
 
     render() {
         const { events } = this.props
+    
+        let myArr = []
+        const regexp = /^[A-Z]/
 
-        const myArr = []
+        events.map(e => myArr.push(e.title) )
+        myArr = myArr.join(" ").split(" ")
+      //.match(regexp)
+   
+console.log(myArr)
 
         return (
             <section className="tagContainer">
-            {events.map(e => <Tag/>)}
+                {myArr.map(e => <Tag name={e}/>)}
             </section>
         )
     }

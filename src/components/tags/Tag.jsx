@@ -10,7 +10,7 @@ class Tag extends React.Component {
     render() {
         return (
             <div className="tagItem">
-              
+              {this.props.name}
             </div>
         )
     }
