@@ -17,7 +17,13 @@ export const fetchAllEvents = () => (dispatch) => {
         .catch(error => console.error(error))
 }
 
-export const filterByDate = (result) => ({
-    type: FILTER_BY_DATE,
-     payload: result
-})
+export const filterByDate = (start,end) => (dispatch) => {
+    request
+        .get(`${baseUrl}/events?language=en`)
+        .then(response => dispatch({
+            type: FILTER_BY_DATE,
+            payload: response.body.filter(e => new Date(e.date.slice(0, 10)) > start && new Date(e.date.slice(0, 10)) < end)
+        }))
+        .catch(error => console.error(error))
+}
+
