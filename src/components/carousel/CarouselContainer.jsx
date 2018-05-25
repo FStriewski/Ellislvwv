@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import EventItem from './EventItem'
 import { fetchAllEvents } from '../../actions/events'
-import '../../style/style.css'
+import '../../style/carouselUnit.css'
 
 class CarouselContainer extends React.Component {
     static propTypes = {

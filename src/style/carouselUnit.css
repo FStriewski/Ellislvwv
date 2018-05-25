@@ -1,0 +1,68 @@
+.carouselContainer {
+    margin: 1%;
+    height: 60%;
+    min-width: 80%;
+    border: 1px dotted black;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.eventItem {
+    min-width: 28%;
+    min-height: 75%;
+    margin: 2%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventHeading {
+    text-align: right;
+    color: white;
+    background-color: #1a4e57;
+    padding: .5rem;
+    font-family: Raleway, sans-serif;
+  
+}
+
+.eventDay {}
+
+.eventTime {
+    font-weight: 700;
+}
+
+.eventBody {
+    text-align: center;
+    padding: 2%;
+    background-color: #f3f3f3;
+    flex: 1 0 auto;
+}
+
+.eventTitle {
+      font-size: 1rem;
+}
+
+.eventDescription {
+      font-size: .9rem;
+      text-align: justify;
+       padding: 2%;
+}
+
+.eventFooter {
+    flex-shrink: 0;
+    text-align: center;
+     background-color: #f3f3f3;
+}
+
+.eventButton{
+    border: 1px solid #eddd3e;
+    background-color: #eddd3e;
+    color: #12353c;
+    padding: .5rem 1rem;
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}

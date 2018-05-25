@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import {fetchAllEvents} from '../../actions/events'
-import '../../style/style.css'
+import '../../style/carouselUnit.css'
 
 
 class EventItem extends React.Component {
@@ -19,11 +19,15 @@ class EventItem extends React.Component {
                     <span className="eventDay"> {day}</span><br />
                     <span className="eventTime"> {time}</span>
                 </div>
+
                 <div className="eventBody">
                     <h5 className="eventTitle">{this.props.title}</h5>
                     <p className="eventDescription">{this.props.description}</p>
-                    <a className="eventButton" href={this.props.url} target="_blank">More...</a>
+
                 </div>
+                    <footer className="eventFooter">
+                    <a href={this.props.url} target="_blank"><button className="eventButton" type="button">More</button></a>
+                    </footer>
             </div>
         )
     }
