@@ -1,0 +1,33 @@
+.topBarContainer {
+    height: 50px;
+    border: 1px dotted black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+    font-family: Raleway, sans-serif;
+}
+
+.topBarControls {
+    vertical-align: middle;
+    width: auto;
+
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.topBarTitleContainer {
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.topBarTitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.topBarSubTitle {
+    font-size: 1rem;
+}
