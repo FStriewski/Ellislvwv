@@ -22,8 +22,12 @@ class CarouselContainer extends React.Component {
     render() {
         const { events } = this.props
 
+        const myArr = []
+
         return (
-            <section className="tagContainer">e</section>
+            <section className="tagContainer">
+            {events.map(e => <Tag/>)}
+            </section>
         )
     }
 
