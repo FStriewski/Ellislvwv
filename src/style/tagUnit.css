@@ -1,0 +1,22 @@
+.tagContainer{
+  
+    border: 1px dashed black;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        background-color: #f3f3f3;
+}
+
+.tagItem button {
+    background-color: #1a4e57;
+    color: white;
+    margin: .2rem;
+    font-size: .7rem;
+    padding: .5rem 1rem;
+    font-family: Raleway, sans-serif;
+    margin-bottom: .5rem;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
