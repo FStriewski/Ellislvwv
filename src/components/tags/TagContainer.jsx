@@ -51,7 +51,9 @@ class CarouselContainer extends React.Component {
   
         return (
             <section className="tagContainer">
-            <button onClick={this.resetFilter}>All </button> 
+                <div className="tagItem">
+                <button onClick={this.resetFilter}>All </button> 
+                </div>
             {
                     tagList.map(tag => <Tag key={tag[0]} name={tag[0]} count={tag[1]} />)
             }
