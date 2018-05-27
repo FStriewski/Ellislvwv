@@ -1,0 +1,255 @@
+[
+  {
+    "itemType": "event",
+    "description": "Performance matters. Research shows performance has a huge impact on conversion and user retention. You — as a front-end developer — can make a big difference! In this full day masterclass you will learn how to boost performance to the max.",
+    "url": "https://www.eventbrite.nl/e/tickets-front-end-performance-master-class-42671692180",
+    "date": "2018-10-19T07:00:00.000Z",
+    "title": "Performance Masterclass #2",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "Understanding browsers and knowing about the latest web technology allows you to design better user experiences. In this full-day hands-on workshop you'll learn more about web technology, new design patterns to make websites more app-y and go beyond the browser. ",
+    "url": "https://www.eventbrite.nl/e/tickets-design-for-web-masterclass-45098673346",
+    "date": "2018-09-28T07:00:00.000Z",
+    "title": "Masterclass Design for Web",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "A Progressive Web App promises a native-app-like experience in the browser leading to higher retention and conversion. In this masterclass you will create a full fledged PWA from a real world example site. The app will be installable, run fullscreen, continue to work offline and support push notifications!",
+    "url": "https://www.eventbrite.nl/e/tickets-progressive-web-apps-masterclass-43444034276",
+    "date": "2018-09-14T19:00:00.000Z",
+    "title": "Progressive Web App Masterclass September",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "The best projects are a result of a great collaboration between developers and designers. While we each have our specialty, together we make things better. So let’s do that! Let’s meet up, share ideas, learn new stuff and have fun.",
+    "url": "https://www.meetup.com/Dev-hearts-Des/events/248565908/",
+    "date": "2018-04-12T16:00:00.000Z",
+    "title": "Dev ♥ Des #2 ",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "It's time for a new edition of our own Front-end Forward meetup. This time we're going to talk about API's and drink some IPA's. There will be 3 talks: 'You are the API', 'GraphQL, Apollo and Optimistic UI updates' and 'The Gateway to your API '.",
+    "url": "https://www.meetup.com/Front-end-Forward/events/242532650/",
+    "date": "2018-02-21T16:30:00.000Z",
+    "title": "APIs Anonymous",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "A Progressive Web App promises a native-app-like experience in the browser leading to higher retention and conversion. In this masterclass you will create a full fledged PWA from a real world example site. The app will be installable, run fullscreen, continue to work offline and support push notifications!",
+    "url": "https://www.eventbrite.nl/e/tickets-progressive-web-apps-masterclass-35405138723?utm_term=eventurl_text",
+    "date": "2018-01-26T08:00:00.000Z",
+    "title": "Progressive Web App Masterclass",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "The best projects are a result of a great collaboration between developers and designers. While we each have our specialty, together we make things better. So let’s do that! Let’s meet up, share ideas, learn new stuff and have fun.",
+    "url": "https://www.meetup.com/Dev-hearts-Des/events/244993778/",
+    "date": "2017-12-06T17:00:00.000Z",
+    "title": "Dev ♥ Des #1",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "Performance matters. Research shows performance has a huge impact on conversion and user retention. You — as a front-end developer — can make a big difference! In this full day masterclass you will learn how to boost performance to the max.",
+    "url": "https://www.eventbrite.nl/e/tickets-front-end-performance-master-class-35376815006?utm_term=eventurl_text",
+    "date": "2017-10-20T07:00:00.000Z",
+    "title": "Performance Masterclass",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "During this meetup we share our experiences with PWAs in production.",
+    "url": "https://www.meetup.com/Front-end-Forward/events/240636712/",
+    "date": "2017-09-20T16:00:00.000Z",
+    "title": "Progressive Web Apps in Production",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "What is a Service worker? How do push notifications, background sync and offline-first strategies work? You'll find out in our day-long hands-on workshop. <em>Note: workshop will be in Dutch.</em>",
+    "url": "https://fronteers.nl/workshops/service-workers",
+    "date": "2017-09-15T07:00:00.000Z",
+    "title": "Workshop: Service workers, the force behind Progressive Web Apps",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "Web security is not just for back-end developers. Learn why at this meetup.",
+    "url": "https://www.meetup.com/Front-end-Forward/events/241907868/",
+    "date": "2017-08-31T16:00:00.000Z",
+    "title": "Web Security for Front-End Developers",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "We are hosting the Inclusive Design and Accessibility meetup, because we care a lot about inclusive design and accessible websites. This meetup will be in English with a Dutch sign Language interpreter.",
+    "url": "https://www.meetup.com/Inclusive-Design-Accessibility/events/237044007/",
+    "date": "2017-06-08T22:00:00.000Z",
+    "title": "Accessibility in graphic design and development tools",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "Custom fonts and animated vector illustrations bring your site to life. 62% of all sites already use custom fonts. And the use of SVG doubled last year. It's time for a meetup on how to get the most out of them and use them responsibly.",
+    "url": "https://www.meetup.com/Front-end-Forward/events/237722931/",
+    "date": "2017-06-07T16:00:00.000Z",
+    "title": "Fast Fonts and Snappy SVGs",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "We will talk about Progressive Web App Gotcha's at the Dom Code Utrecht meetup.",
+    "url": "https://www.meetup.com/DomCode/events/239327435/",
+    "date": "2017-04-25T17:00:00.000Z",
+    "title": "Progressive web apps at Dom Code Utrecht",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "On 6 April we will be in Lisbon (again!) and host the 'Front-end Lisbon' meetup. We will give two talks: 'Putting service workers in production' and 'Fast & flexible SVGs'.",
+    "url": "https://www.meetup.com/Front-end-Lisbon/events/235777805/",
+    "date": "2017-04-03T17:00:00.000Z",
+    "title": "SVG and Service Workers in Lisbon",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "Performance matters. Research shows performance has a huge impact on conversion and user retention. You — as a front-end developer — can make a big difference! In this full day masterclass you will learn how to boost performance to the max.",
+    "url": "https://www.meetup.com/Front-end-Forward/events/234855491/",
+    "date": "2017-01-27T18:00:00.000Z",
+    "title": "Front-end Performance Masterclass",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "On 27 October we will show some of our 'truques' or tricks in Lisbon. We will show how we made voorhoede.nl as fast as possible in 'Boosting Frontend Performance' and how we apply module based development in 'Faking Web Components'.",
+    "url": "https://www.meetup.com/Front-end-Lisbon/events/231961235/",
+    "date": "2016-10-27T17:00:00.000Z",
+    "title": "Front-end Truques",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "On October 20th, we will be hosting the NLHTML5 meetup. Talks will be about being pragmatic in your job and developing for the NES.",
+    "url": "https://www.meetup.com/NLHTML5/events/229405386/",
+    "date": "2016-10-20T16:00:00.000Z",
+    "title": "Pragmatism and Progression",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "We love React for it's developer convenience, but too often semantic HTML and accessibility is overlooked in this JS centered world. Deep in the lion’s den we talked about why React alone is not enough.",
+    "url": "http://reactnl.org/2016",
+    "date": "2016-10-13T06:30:00.000Z",
+    "title": "HTML still matters at ReactNL",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "It's time for a new edition of our own Front-end Forward meetup. This time it's all about Rendering Done Right. There will be 2 talks: 'Enhance your HTML' and 'Isomorphic React'.",
+    "url": "https://www.meetup.com/Front-end-Forward/events/232253072/",
+    "date": "2016-08-17T16:00:00.000Z",
+    "title": "Rendering done right",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "We'll give an introductory talk on the upcoming Angular 2.0 and its concepts like DI, Templating and Routing. The talk is followed by a mini workshop on the same topic, in which you get to code.",
+    "url": "https://plus.google.com/u/1/events/crkii6i1r0ki8k4705te9vhmjb0",
+    "date": "2014-10-01T16:00:00.000Z",
+    "title": "AngularJS Futurama",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "On 29 Januari we will host the JS MVC Meetup and this evening will all be about application architecture in single page apps.",
+    "url": "https://www.meetup.com/JavaScript-MVC-Meetup-Amsterdam/events/156767102/",
+    "date": "2014-01-29T17:30:00.000Z",
+    "title": "Single Page Apps on JS MVC Meetup #6",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  },
+  {
+    "itemType": "event",
+    "description": "A diverse evening with 10 presentations of 20 slides each, presented in exactly 6 minutes and 40 seconds. We'll talk about the &lt;details&gt; element, everything about meta data and the psychology behind interaction on the web.",
+    "url": "https://fronteers.nl/bijeenkomsten/2013/voorhoede",
+    "date": "2013-04-18T16:00:00.000Z",
+    "title": "Fronteers Pecha Kucha night",
+    "slugI18n": {
+      "nl": null,
+      "en": null
+    }
+  }
+]

@@ -19,21 +19,36 @@ class CarouselContainer extends React.Component {
         this.props.fetchAllEvents()
     }
 
-    render() {
-        const { events } = this.props
-    
+    generateTags = (events) => {
         let myArr = []
+        const histogram = {}
+        let tagList = []
         const regexp = /^[A-Z]/
 
-        events.map(e => myArr.push(e.title) )
-        myArr = myArr.join(" ").split(" ")
-      //.match(regexp)
-   
-console.log(myArr)
+        if (!events) return
 
+        events.map(e => myArr.push(e.title))
+        myArr = myArr.join(" ").split(" ")
+
+        myArr.forEach(e => histogram.hasOwnProperty(e) ? histogram[e] += 1 : histogram[e] = 1)
+
+        for (let property in histogram) {
+            if (histogram[property] > 1 && property.match(regexp)) {
+                tagList.push([property, histogram[property]])
+            }
+        }
+
+        return tagList.sort()
+    }
+
+    render() {
+        const tagList = this.generateTags(this.props.events)
+        console.log(tagList)
         return (
             <section className="tagContainer">
-                {myArr.map(e => <Tag name={e}/>)}
+            {
+                tagList.map(tag => <Tag name={tag[0]} count={tag[1]} />)
+            }
             </section>
         )
     }
