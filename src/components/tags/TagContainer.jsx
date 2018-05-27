@@ -41,13 +41,18 @@ class CarouselContainer extends React.Component {
         return tagList.sort()
     }
 
+    filterByTag = (e) => {
+        e.preventDefault();
+        return "1"
+    }
+
     render() {
         const tagList = this.generateTags(this.props.events)
-        console.log(tagList)
+  
         return (
             <section className="tagContainer">
             {
-                tagList.map(tag => <Tag name={tag[0]} count={tag[1]} />)
+                    tagList.map(tag => <Tag key={tag[0]} name={tag[0]} count={tag[1]} />)
             }
             </section>
         )
