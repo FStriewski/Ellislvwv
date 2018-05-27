@@ -1,5 +1,5 @@
 
-import { FETCH_ALL_EVENTS, FILTER_BY_DATE } from '../actions/events'
+import { FETCH_ALL_EVENTS, FILTER_BY_DATE, FILTER_BY_TAG } from '../actions/events'
 
 const initialState = [
     {
@@ -266,8 +266,9 @@ export default function (state = initialState, action) {
     switch (action.type) {
         case FETCH_ALL_EVENTS:
             return action.payload
-
         case FILTER_BY_DATE:
+            return action.payload
+        case FILTER_BY_TAG:
             return action.payload
     }
 

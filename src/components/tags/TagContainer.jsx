@@ -41,10 +41,6 @@ class CarouselContainer extends React.Component {
         return tagList.sort()
     }
 
-    filterByTag = (e) => {
-        e.preventDefault();
-        return "1"
-    }
 
     render() {
         const tagList = this.generateTags(this.props.events)
