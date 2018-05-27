@@ -38,7 +38,7 @@ class DateFilter extends React.Component {
             <form className="dateFilterContainer" onSubmit={this.handleSubmit}>
                 <input className="StartDatePicker" name="startDate" onChange={this.handleChange} type="date" />
                 <input className="EndDatePicker" name="endDate" onChange={this.handleChange} type="date" />
-                <button > Search </button>
+                <button id="dateFilterButton"> Search </button>
             </form>
         </div>
         )

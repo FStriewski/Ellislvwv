@@ -1,18 +1,16 @@
 .topBarContainer {
     height: 50px;
-    border: 1px dotted black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1%;
     font-family: Raleway, sans-serif;
-    background-color:#eddd3e;
+    background-color: #eddd3e;
 }
 
 .topBarControls {
     vertical-align: middle;
     width: auto;
-
     margin-right: 1%;
     margin-top: 1%;
 }
@@ -31,4 +29,32 @@
 
 .topBarSubTitle {
     font-size: 1rem;
+}
+
+#dateFilterButton {
+    background-color: #1a4e57;
+    color: white;
+    margin: .2rem;
+    font-size: .7rem;
+    padding: .5rem 1rem;
+    font-family: Raleway, sans-serif;
+    margin-bottom: .5rem;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: Raleway, sans-serif;
+    font-size: .7rem;
+    border: 1px solid #1a4e57;
+    background: #f3f3f3;
+    padding: .3rem 1rem;
+    margin-right: .2rem;
+    margin-bottom: .7rem;
+    display: inline-block !important;
+    visibility: visible !important;
 }
