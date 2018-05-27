@@ -43,6 +43,7 @@ class CarouselContainer extends React.Component {
 
     resetFilter = () => {
         this.props.fetchAllEvents()
+        
     }
 
 
@@ -54,8 +55,9 @@ class CarouselContainer extends React.Component {
                 <div className="tagItem">
                 <button onClick={this.resetFilter}>All </button> 
                 </div>
-            {
-                    tagList.map(tag => <Tag key={tag[0]} name={tag[0]} count={tag[1]} />)
+            {   
+                   tagList.map(tag => <Tag key={tag[0]} name={tag[0]} count={tag[1]} />)
+                  
             }
             </section>
         )
@@ -65,8 +67,8 @@ class CarouselContainer extends React.Component {
 
 const mapStateToProps = (state) => (
     {
-        events: state.events
+        events: state.events,
     }
 )
 
-export default connect(mapStateToProps, { fetchAllEvents, filterByTag })(CarouselContainer)
+export default connect(mapStateToProps, { fetchAllEvents })(CarouselContainer)
