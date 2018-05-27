@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Tag from './Tag'
-import { fetchAllEvents } from '../../actions/events'
+import { fetchAllEvents, filterByTag } from '../../actions/events'
 import '../../style/tagUnit.css'
 
 class CarouselContainer extends React.Component {
@@ -41,12 +41,17 @@ class CarouselContainer extends React.Component {
         return tagList.sort()
     }
 
+    resetFilter = () => {
+        this.props.fetchAllEvents()
+    }
+
 
     render() {
         const tagList = this.generateTags(this.props.events)
   
         return (
             <section className="tagContainer">
+            <button onClick={this.resetFilter}>All </button> 
             {
                     tagList.map(tag => <Tag key={tag[0]} name={tag[0]} count={tag[1]} />)
             }
@@ -62,4 +67,4 @@ const mapStateToProps = (state) => (
     }
 )
 
-export default connect(mapStateToProps, { fetchAllEvents })(CarouselContainer)
+export default connect(mapStateToProps, { fetchAllEvents, filterByTag })(CarouselContainer)
