@@ -21,8 +21,8 @@ class EventItem extends React.Component {
                 </div>
 
                 <div className="eventBody">
-                    <h5 className="eventTitle">{this.props.title}</h5>
-                    <p className="eventDescription">{this.props.description}</p>
+                    <div className="eventTitle">{this.props.title}</div>
+                    <div className="eventDescription">{this.props.description}</div>
 
                 </div>
                     <footer className="eventFooter">

@@ -30,8 +30,8 @@ class CarouselContainer extends React.Component {
         const sortedEvents = events.sort((a, b) => new Date(b.date.slice(0, 10)) - new Date(a.date.slice(0, 10)))
 
         return (
-            <section className="carouselContainer">{
-                sortedEvents.map(e => 
+            <section className="carouselContainer">
+                {sortedEvents.map(e => 
                 <EventItem 
                     key={e.date} 
                     title={e.title} 
@@ -39,7 +39,9 @@ class CarouselContainer extends React.Component {
                     date={e.date} 
                     url={e.url} 
                 />)
-            }</section>
+                
+            }
+            </section>
         )
     }
 
