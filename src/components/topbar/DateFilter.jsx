@@ -66,6 +66,4 @@ class DateFilter extends React.Component {
 
 }
 
-
-
 export default connect(null, { fetchAllEvents })(DateFilter)

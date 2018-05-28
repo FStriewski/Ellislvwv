@@ -51,7 +51,6 @@ class CarouselContainer extends React.Component {
             </section>
         )
     }
-
 }
 
 const mapStateToProps = (state) => (
