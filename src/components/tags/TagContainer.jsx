@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Tag from './Tag'
-import { fetchAllEvents, filterByTag } from '../../actions/events'
+import { fetchAllEvents } from '../../actions/events'
 import '../../style/tagUnit.css'
 
 class CarouselContainer extends React.Component {
@@ -12,7 +12,8 @@ class CarouselContainer extends React.Component {
             title: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
             url: PropTypes.string.isRequired
-        })).isRequired
+        })).isRequired,
+        fetchAllEvents: PropTypes.func.isRequired
     }
 
     componentWillMount = () => {

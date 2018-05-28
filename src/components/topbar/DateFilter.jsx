@@ -1,10 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { fetchAllEvents } from '../../actions/events'
 import '../../style/topBarUnit.css'
 
 
 class DateFilter extends React.Component {
+    static propTypes = {
+        fetchAllEvents: PropTypes.func.isRequired
+    }
 
     state = {
         startDate: "",
@@ -31,16 +35,28 @@ class DateFilter extends React.Component {
         )
     }
 
+    handleReset = () => {
+        console.log("Click")
+        this.props.fetchAllEvents()
+        // this.setState(
+        //     {
+        //         startDate: "",
+        //         endDate: "",
+        //     })
+    }
+
 
     render() {
         return (
-            <div>
-            <form className="dateFilterContainer" onSubmit={this.handleSubmit}>
-                <input className="StartDatePicker" name="startDate" onChange={this.handleChange} type="date" />
-                <input className="EndDatePicker" name="endDate" onChange={this.handleChange} type="date" />
-                <button id="dateFilterButton"> Search </button>
-            </form>
-        </div>
+            <div className="dateWrapper">
+                <button id="filterRelease" onClick={ this.handleReset}> x </button>
+                <form className="dateFilterContainer" onSubmit={this.handleSubmit}>
+                    {/* <label for="startDate">Event between:</label> */}
+                    <input className="datePicker" name="startDate" onChange={this.handleChange} type="date" />
+                    <input className="datePicker" name="endDate" onChange={this.handleChange} type="date" />
+                    <button id="dateFilterButton"> Search </button>
+                </form>
+            </div>
         )
     }
 
@@ -48,4 +64,4 @@ class DateFilter extends React.Component {
 
 
 
-export default connect(null, null)(DateFilter)
+export default connect(null, { fetchAllEvents})(DateFilter)

@@ -31,16 +31,23 @@ class CarouselContainer extends React.Component {
 
         return (
             <section className="carouselContainer">
-                {sortedEvents.map(e => 
-                <EventItem 
-                    key={e.date} 
-                    title={e.title} 
-                    description={e.description} 
-                    date={e.date} 
-                    url={e.url} 
-                />)
-                
-            }
+                {(sortedEvents.length > 0)
+                    ? sortedEvents.map(e =>
+                        <EventItem
+                            key={e.date}
+                            title={e.title}
+                            description={e.description}
+                            date={e.date}
+                            url={e.url}
+                        />)
+                    : < EventItem
+                        key=""
+                        title="No events found"
+                        description=""
+                        date=""
+                        url="https://www.voorhoede.nl/"
+                    />
+                }
             </section>
         )
     }

@@ -1,5 +1,5 @@
 .topBarContainer {
-    height: 50px;
+    min-height: 2.4em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,7 +12,9 @@
     vertical-align: middle;
     width: auto;
     margin-right: 1%;
+    margin-left: 10%;
     margin-top: 1%;
+    float: right;
 }
 
 .topBarTitleContainer {
@@ -45,7 +47,6 @@
 }
 
 input[type="date"] {
-    appearance: none;
     -webkit-appearance: none;
     color: #95a5a6;
     font-family: Raleway, sans-serif;
@@ -57,4 +58,30 @@ input[type="date"] {
     margin-bottom: .7rem;
     display: inline-block !important;
     visibility: visible !important;
+}
+
+label {
+    font-size: .6rem;
+    display: block;
+    text-align: left;
+}
+
+.dateWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#filterRelease {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    color: #1a4e57;
+    font-weight: 700;
+    font-size: .9rem;
+    font-family: Raleway, sans-serif;
+    margin-bottom: .5rem;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
 }

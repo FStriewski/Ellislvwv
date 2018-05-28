@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import {fetchAllEvents} from '../../actions/events'
 import '../../style/carouselUnit.css'
 
 
 class EventItem extends React.Component {
-
+    static propTypes = {
+            title: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            url: PropTypes.string.isRequired
+    }
 
 
     render(){
@@ -25,15 +27,12 @@ class EventItem extends React.Component {
                     <div className="eventDescription">{this.props.description}</div>
 
                 </div>
-                    <footer className="eventFooter">
+                <footer className="eventFooter">
                     <a href={this.props.url} target="_blank"><button className="eventButton" type="button">More</button></a>
-                    </footer>
+                </footer>
             </div>
         )
     }
-
 }
 
-
-
-export default connect(null, null )(EventItem)
+export default (EventItem)
