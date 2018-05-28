@@ -30,19 +30,27 @@ class CarouselContainer extends React.Component {
         const sortedEvents = events.sort((a, b) => new Date(b.date.slice(0, 10)) - new Date(a.date.slice(0, 10)))
 
         return (
-            <section className="carouselContainer">{
-                sortedEvents.map(e => 
-                <EventItem 
-                    key={e.date} 
-                    title={e.title} 
-                    description={e.description} 
-                    date={e.date} 
-                    url={e.url} 
-                />)
-            }</section>
+            <section className="carouselContainer">
+                {(sortedEvents.length > 0)
+                    ? sortedEvents.map(e =>
+                        <EventItem
+                            key={e.date}
+                            title={e.title}
+                            description={e.description}
+                            date={e.date}
+                            url={e.url}
+                        />)
+                    : < EventItem
+                        key=""
+                        title="No events found"
+                        description=""
+                        date=""
+                        url="https://www.voorhoede.nl/"
+                    />
+                }
+            </section>
         )
     }
-
 }
 
 const mapStateToProps = (state) => (

@@ -14,7 +14,6 @@ class Tag extends React.Component {
     
     filterTag = (tag) => {
         this.props.filterByTag(tag)
-        console.log(tag)
     }
 
     render() {
@@ -28,5 +27,4 @@ class Tag extends React.Component {
 }
 
 
-
-export default connect(null, {filterByTag})(Tag)
+export default connect(null, { filterByTag})(Tag)

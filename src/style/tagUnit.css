@@ -1,11 +1,10 @@
 .tagContainer{
-  
-    border: 1px dashed black;
     min-height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-        background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
+    margin: 1%;
 }
 
 .tagItem button {

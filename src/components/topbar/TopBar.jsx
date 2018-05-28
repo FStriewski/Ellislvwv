@@ -3,10 +3,13 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import DateFilter from './DateFilter'
 import '../../style/topBarUnit.css'
-import { filterByDate, fetchAllEvents} from '../../actions/events'
+import { filterByDate } from '../../actions/events'
 
 
 class TopBar extends React.Component {
+    static propTypes = {
+        filterByDate: PropTypes.func,
+    }
 
     dispatchFilterDate = (filter) => {
 
@@ -47,4 +50,4 @@ const mapStateToProps = (state) => (
     }
 )
 
-export default connect(mapStateToProps, { filterByDate, fetchAllEvents})(TopBar)
+export default connect(mapStateToProps, { filterByDate, })(TopBar)
