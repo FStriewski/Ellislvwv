@@ -13,6 +13,7 @@ class DateFilter extends React.Component {
     state = {
         startDate: "",
         endDate: "",
+        filerOn: false,
     }
 
     handleChange = (event) => {
@@ -28,9 +29,8 @@ class DateFilter extends React.Component {
         this.props.onSubmit(this.state)
 
         this.setState(
-            { 
-                startDate: "",
-                endDate: "",
+            {
+                filerOn: true,
             }
         )
     }
@@ -39,17 +39,25 @@ class DateFilter extends React.Component {
         this.props.fetchAllEvents()
         this.refs.startDate.value = ''
         this.refs.endDate.value = ''
+        this.setState(
+            {
+                filerOn: false,
+            }
+        )
     }
 
 
     render() {
         return (
             <div className="dateWrapper">
-                <button id="filterRelease" onClick={ this.handleReset}> x </button>
+                {(this.state.filerOn)
+                    ? <button id="filterRelease" onClick={this.handleReset}> x </button>
+                    : null}
+
                 <form className="dateFilterContainer" onSubmit={this.handleSubmit}>
                     {/* <label htmlFor="startDate">Event between:</label> */}
-                    <input className="datePicker" name="startDate" onChange={this.handleChange} type="date" ref="startDate"/>
-                    <input className="datePicker" name="endDate" onChange={this.handleChange} type="date" ref="endDate"/>
+                    <input className="datePicker" name="startDate" onChange={this.handleChange} type="date" ref="startDate" />
+                    <input className="datePicker" name="endDate" onChange={this.handleChange} type="date" ref="endDate" />
                     <button id="dateFilterButton"> Search </button>
                 </form>
             </div>
@@ -60,4 +68,4 @@ class DateFilter extends React.Component {
 
 
 
-export default connect(null, { fetchAllEvents})(DateFilter)
+export default connect(null, { fetchAllEvents })(DateFilter)
