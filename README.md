@@ -8,8 +8,8 @@ For this project I use a single API endpoint (/events) to retrieve all events (t
 ###  User Stories:
 * As a user I can see all events, sorted (descending) by date.
 * I can click a button / link that brings me to the website of the event.
-* I can set a start / end date to filter events ("Date Filter")
-* I can click a link from the tag list to filter events that contain this word in their title ("Tag Filter)
+* I can set a start / end date to filter events ("Date Filter").
+* I can click a link from the tag list to filter events that contain this word in their title ("Tag Filter).
 * I can release filters to return to the default state, showing all events.
 
 ### Additional goals:
@@ -22,7 +22,7 @@ For this project I use a single API endpoint (/events) to retrieve all events (t
 
 ### Goals not achieved in time/ things I would improve:
 * Events: Change the carousel to a proper item carousel that displays 3 items at a time instead of a scrollbar.
-* Tags: Either hide tags once a tag is clicked or have all tags displayed (including tags of filtered events)
+* Tags: Either hide tags once a tag is clicked or have all tags displayed (including tags of filtered events).
 * Tests: Add JEST/Enzyme tests.
 
 ###  Time spend:
