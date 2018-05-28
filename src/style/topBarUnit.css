@@ -81,7 +81,7 @@ label {
     font-size: .9rem;
     font-family: Raleway, sans-serif;
     margin-bottom: .5rem;
-    border: none;
     text-decoration: none;
     display: inline-block;
+    outline:none
 }

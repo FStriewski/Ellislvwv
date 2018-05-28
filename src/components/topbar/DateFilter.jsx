@@ -36,13 +36,9 @@ class DateFilter extends React.Component {
     }
 
     handleReset = () => {
-        console.log("Click")
         this.props.fetchAllEvents()
-        // this.setState(
-        //     {
-        //         startDate: "",
-        //         endDate: "",
-        //     })
+        this.refs.startDate.value = ''
+        this.refs.endDate.value = ''
     }
 
 
@@ -51,9 +47,9 @@ class DateFilter extends React.Component {
             <div className="dateWrapper">
                 <button id="filterRelease" onClick={ this.handleReset}> x </button>
                 <form className="dateFilterContainer" onSubmit={this.handleSubmit}>
-                    {/* <label for="startDate">Event between:</label> */}
-                    <input className="datePicker" name="startDate" onChange={this.handleChange} type="date" />
-                    <input className="datePicker" name="endDate" onChange={this.handleChange} type="date" />
+                    {/* <label htmlFor="startDate">Event between:</label> */}
+                    <input className="datePicker" name="startDate" onChange={this.handleChange} type="date" ref="startDate"/>
+                    <input className="datePicker" name="endDate" onChange={this.handleChange} type="date" ref="endDate"/>
                     <button id="dateFilterButton"> Search </button>
                 </form>
             </div>
